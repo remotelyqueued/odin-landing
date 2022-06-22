@@ -96,7 +96,39 @@
     font-style: normal;
 }
 
-p {
-    font-family: robotoblack;
-    font-size: 60px;
+/* * {
+    border: 1px dotted red;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    background-color: #1f2937;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+div {
+    flex: 1;
+}
+
+div:nth-child(1) {
+    background-color: #1f2937;
+}
+
+div:nth-child(even) {
+    background-color: #f9faf8;
 }
