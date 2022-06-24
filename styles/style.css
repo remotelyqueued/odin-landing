@@ -99,7 +99,6 @@
 /* * {
     border: 1px dotted red;
 } */
-
 body {
     margin: 0;
     padding: 0;
@@ -112,37 +111,18 @@ body {
     flex-direction: column;
 }
 
-header {
+header, footer {
     background-color: #1f2937;
     font-size: 18px;
     color: #e5e7eb;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 12px;
-}
-
-footer {
-    background-color: #1f2937;
-    font-size: 18px;
-    color: #e5e7eb;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 12px;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
 }
 
 ul {
     display: flex;
     list-style: none;
-    text-decoration: none;
-    justify-content: center;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -152,6 +132,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: #e5e7eb;
 }
 
 a:hover {
@@ -162,7 +143,7 @@ a:visited {
     color: blue;
 }
 
-main .section-1 {
+.section-1 {
     background-color: #1f2937;
     display: flex;
     padding: 10px;
@@ -171,37 +152,25 @@ main .section-1 {
     font-size: 48px;
     font-family: 'robotobold';
     color: #f9faf8;
-    font-weight: bolder;
-    flex: stretch;
 }
 
-main .section-1 {
-    display: flex;
-}
-
-main .section-2 {
+.section-2 {
     background-color: #f9faf8;
     display: flex;
 }
 
-main .section-3 {
+.section-3 {
     background-color: #e5e7eb;
     color: #1f2937;
     display: flex;
     font-family: 'robotolight_italic';
     font-size: 36px;
-    padding-left: 26px;
-    padding-right: 26px;
 }
 
-main .section-4 {
+.section-4 {
     background-color: #f9faf8;
     display: flex;
-}
-
-main .signature {
-    font-weight: 900;
-    font-size: 16px;
+    padding: 100px;
 }
 
 blockquote {
@@ -225,6 +194,4 @@ blockquote p::after {
 
 img {
     width: 600px;
-    height: auto;
-    justify-content: flex-end;
 }
