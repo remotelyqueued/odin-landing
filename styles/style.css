@@ -104,15 +104,32 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+
     font-size: 10px;
+    font-family: 'robotoregular';
 
     display: flex;
     flex-direction: column;
 }
 
-header,
+header {
+    background-color: #1f2937;
+    font-size: 18px;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+}
+
 footer {
     background-color: #1f2937;
+    font-size: 18px;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
 }
 
 main {
@@ -121,14 +138,93 @@ main {
     flex: 1;
 }
 
-div {
-    flex: 1;
+ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    font-size: 14px;
 }
 
-div:nth-child(1) {
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}
+
+main .section-1 {
     background-color: #1f2937;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 48px;
+    font-family: 'robotobold';
+    color: #f9faf8;
+    font-weight: bolder;
+    flex: stretch;
 }
 
-div:nth-child(even) {
+main .section-1 {
+    display: flex;
+}
+
+main .section-2 {
     background-color: #f9faf8;
+    display: flex;
+}
+
+main .section-3 {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    display: flex;
+    font-family: 'robotolight_italic';
+    font-size: 36px;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+main .section-4 {
+    background-color: #f9faf8;
+    display: flex;
+}
+
+main .signature {
+    font-weight: 900;
+    font-size: 16px;
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+    margin: 0;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+img {
+    width: 600px;
+    height: auto;
+    justify-content: flex-end;
 }
