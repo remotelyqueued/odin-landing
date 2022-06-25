@@ -99,6 +99,16 @@
 /* * {
     border: 1px dotted red;
 } */
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -111,23 +121,38 @@ body {
     flex-direction: column;
 }
 
-header, footer {
+header,
+footer {
     background-color: #1f2937;
     font-size: 18px;
     color: #e5e7eb;
     display: flex;
-    justify-content: space-around;
+    padding-right: 4rem;
+    padding-left: 4rem;
     align-items: center;
+}
+header div {
+    width: 50%;
+}
+
+header nav {
+    width: 50%;
 }
 
 ul {
     display: flex;
     list-style: none;
     align-items: center;
+    justify-content: flex-end;
+    /* flex: 1; */
     padding: 0;
     margin: 0;
     gap: 20px;
     font-size: 14px;
+    flex-shrink: 0;
+}
+ul > li {
+    flex-shrink: 0;
 }
 
 a {
@@ -145,13 +170,37 @@ a:visited {
 
 .section-1 {
     background-color: #1f2937;
-    display: flex;
-    padding: 10px;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 48px;
-    font-family: 'robotobold';
     color: #f9faf8;
+
+    /* font-size: 48px; */
+
+    display: flex;
+    /* align-items: center; */
+    gap: 20px;
+    padding: 4rem;
+
+}
+
+.section-1 h1 {
+    font-family: 'robotobold';
+    font-size: 48px;
+    margin: 0;
+    line-height: 1;  
+}
+
+.section-1 div {
+    width: 50%;
+
+}
+
+.section-1 img {
+    object-fit: cover;
+    width: 100%
+}
+
+img {
+    /* width: 100px; */
+    flex: 1;
 }
 
 .section-2 {
@@ -190,8 +239,4 @@ blockquote p::before {
 
 blockquote p::after {
     content: '\201D';
-}
-
-img {
-    width: 600px;
 }
