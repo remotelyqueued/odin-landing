@@ -64,6 +64,10 @@ article {
     padding: 6vw 18vw;
     margin: 0;
 }
+
+button {
+    font-family: 'robotoregular';
+}
 /* ------------------ header ------------------ */
 header {
     background: #1f2937;
@@ -107,8 +111,6 @@ article:nth-of-type(1) {
     border-radius: 0.8rem;
 
     padding: 1rem 3rem;
-
-    font-weight: bold;
 }
 
 .modal p {
@@ -228,7 +230,6 @@ article:nth-of-type(4) {
     border-radius: 0.8rem;
 
     padding: 0.4rem 2.1rem;
-    font-weight: bold;
 }
 
 .action h2 {
@@ -247,6 +248,8 @@ footer {
     color: #e5e7eb;
 
     padding: 1rem;
+
+    font-size: 1.2rem;
 
     justify-content: center;
     text-align: center;
