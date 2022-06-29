@@ -36,11 +36,10 @@ html {
 
 body {
     margin: 0;
-    height: 100vh;
     font-family: 'robotoregular';
-
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 article {
@@ -50,16 +49,13 @@ article {
 
 button {
     font-family: 'robotoregular';
+    text-align: center;
 }
 /* ------------------ header ------------------ */
 header {
     background: #1f2937;
     color: #e5e7eb;
-
     padding: 0vw 18vw;
-
-    flex: 1;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,198 +73,167 @@ header li {
     padding-left: 1.6rem;
     font-size: 1.8rem;
 }
-/* ------------------ 1st section  ------------------ */
-article:nth-of-type(1) {
+/* ------------------ section 1  ------------------ */
+.hero {
     background: #1f2937;
     color: #e5e7eb;
-
     flex: 1;
-
     display: flex;
-    gap: 30px;
+    gap: 3rem;
 }
 
-article:nth-of-type(1) h1 {
+.hero div:first-child {
+    width: 50%;
+    flex: 1;
+}
+
+.hero div:nth-of-type(2) {
+    width: 50%;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+}
+
+.hero h1 {
     color: #f9faf8;
-
     margin: 0;
-
     font-size: 4.8rem;
     font-family: 'robotobold';
-
     line-height: 1;
 }
 
-.modal {
-    width: 50%;
-
-    flex: 1;
-}
-
-.modal button {
-    background-color: #3882f6;
-    color: #e5e7eb;
-
-    border: none;
-    border-radius: 0.8rem;
-
-    padding: 1rem 3rem;
-}
-
-.modal p {
+.hero p {
     color: #e5e7eb;
     margin: 0.8rem 0;
     font-size: 1.8rem;
 }
 
-.placeholder {
-    width: 50%;
-    overflow: hidden;
-
-    flex: 1;
-
-    display: flex;
+.hero button {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border: none;
+    border-radius: 0.8rem;
+    padding: 1rem 3rem;
 }
 
-.placeholder img {
+.hero img {
     max-height: 100%;
     object-fit: contain;
-    /* padding-left: 3rem; */
 }
-/* ------------------ 2nd section  ------------------ */
-article:nth-of-type(2) {
+/* ------------------ section 2  ------------------ */
+.gallery {
     background: #f9faf8;
     padding-top: 5vh;
     display: flex;
-
     flex-direction: column;
     justify-content: space-around;
-
     align-items: center;
     flex-wrap: wrap;
 }
 
-article:nth-of-type(2) h2 {
+.gallery h2 {
     color: #1f2937;
     font-size: 3.6rem;
     font-family: 'robotobold';
+    text-align: center;
 }
 
-.carousel {
+.gallery div {
     display: flex;
     justify-content: center;
     align-items: center;
-
     flex-wrap: wrap;
-    /* margin: 1em; */
     gap: 3rem;
 }
 
-.carousel div {
+.gallery div > div {
     text-align: center;
     max-width: 150px;
-    /* min-width: 150px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5em;
 }
 
-.carousel p {
+.gallery p {
     font-size: 1.4rem;
     margin: auto;
 }
 
-.carousel img {
+.gallery img {
     border: 4px solid #3882f6;
     border-radius: 1.2rem;
-
     max-width: 100%;
     border-radius: 20px;
-
     width: 150px;
     height: 150px;
-
     object-fit: cover;
 }
-/* ------------------ quote  ------------------ */
-article:nth-of-type(3) {
+/* ------------------ section 3  ------------------ */
+.quote {
     background: #e5e7eb;
-
     padding: 8vw 22vw;
-
     flex: 1;
 }
 
-blockquote {
+.quote blockquote {
     color: #1f2937;
-
     font-family: 'robotolight_italic';
     font-size: 3.6rem;
-
     font-style: italic;
     margin: 0;
 }
 
-figcaption {
+.quote figcaption {
     color: #1f2937;
-
     font-family: 'robotoregular';
     font-size: 1.8rem;
     font-weight: bold;
-
     text-align: end;
-
     padding: 1rem 4rem;
 }
-/* ------------------ call to action  ------------------ */
-/* article:nth-of-type(4) { 
-} */
-.action {
-    background-color: #3882f6;
-    border-radius: 0.8rem;
-    color: white;
-
-    padding: 3rem 7rem;
-
-    display: flex;
-
-    justify-content: space-between;
-    align-items: center;
-
-    gap: 2rem;
+/* ------------------ section 4  ------------------ */
+.signup {
+    padding: 6vw 22vw;
 }
 
-.action button {
+.signup > div {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border-radius: 1.2rem;
+    padding: 4rem 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.signup button {
     background-color: transparent;
     border: 0.2rem solid #e5e7eb;
-    border-radius: 0.8rem;
-
+    border-radius: 1rem;
     color: #e5e7eb;
-
-    border-radius: 0.8rem;
-
-    padding: 0.4rem 2.1rem;
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.4rem;
 }
 
-.action h2 {
-    margin: 0;
+.signup h2 {
+    margin: 0.3rem;
     font-size: 1.6rem;
 }
 
-.action p {
-    margin: 0;
+.signup p {
+    margin: 0.3rem;
     font-size: 1.4rem;
 }
 /* ------------------ footer ------------------ */
 footer {
     background: #1f2937;
     color: #e5e7eb;
-
     padding: 1rem;
-
-    font-size: 1.2rem;
-
+    font-size: 1.4rem;
     justify-content: center;
     text-align: center;
+    margin-top: auto;
 }
