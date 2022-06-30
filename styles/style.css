@@ -3,24 +3,18 @@
     font-family: 'robotolight_italic';
     src: url('../fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
         url('../fonts/roboto-lightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
     font-family: 'robotoregular';
     src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
         url('../fonts/roboto-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
     font-family: 'robotobold';
     src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
         url('../fonts/roboto-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 /* ------------------ general setup ------------------ */
 html {
@@ -35,16 +29,28 @@ html {
 }
 
 body {
-    margin: 0;
     font-family: 'robotoregular';
+    min-height: 100vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 article {
-    padding: 6vw 18vw;
     margin: 0;
+    padding: 6vw 18vw;
+}
+
+h1 {
+    font-family: 'robotobold';
+    font-size: 4.8rem;
+    color: #f9faf8;
+    margin: 0;
+    line-height: 1;
+}
+
+h2 {
+    font-family: 'robotobold';
 }
 
 button {
@@ -55,7 +61,7 @@ button {
 header {
     background: #1f2937;
     color: #e5e7eb;
-    padding: 0vw 18vw;
+    padding: 0 18vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,14 +70,13 @@ header {
 header h2 {
     color: #f9faf8;
     font-size: 2.4rem;
-    font-family: 'robotobold';
 }
 
 header li {
     color: #e5e7eb;
+    font-size: 1.8rem;
     display: inline;
     padding-left: 1.6rem;
-    font-size: 1.8rem;
 }
 /* ------------------ section 1  ------------------ */
 .hero {
@@ -94,18 +99,10 @@ header li {
     display: flex;
 }
 
-.hero h1 {
-    color: #f9faf8;
-    margin: 0;
-    font-size: 4.8rem;
-    font-family: 'robotobold';
-    line-height: 1;
-}
-
 .hero p {
     color: #e5e7eb;
-    margin: 0.8rem 0;
     font-size: 1.8rem;
+    margin: 0.8rem 0;
 }
 
 .hero button {
@@ -134,7 +131,6 @@ header li {
 .gallery h2 {
     color: #1f2937;
     font-size: 3.6rem;
-    font-family: 'robotobold';
     text-align: center;
 }
 
@@ -148,7 +144,7 @@ header li {
 
 .gallery div > div {
     text-align: center;
-    max-width: 150px;
+    max-width: 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,12 +157,11 @@ header li {
 }
 
 .gallery img {
-    border: 4px solid #3882f6;
-    border-radius: 1.2rem;
+    border: 0.4rem solid #3882f6;
     max-width: 100%;
-    border-radius: 20px;
-    width: 150px;
-    height: 150px;
+    border-radius: 2rem;
+    width: 15rem;
+    height: 15rem;
     object-fit: cover;
 }
 /* ------------------ section 3  ------------------ */
@@ -186,15 +181,14 @@ header li {
 
 .quote figcaption {
     color: #1f2937;
-    font-family: 'robotoregular';
+    font-family: 'robotobold';
     font-size: 1.8rem;
-    font-weight: bold;
     text-align: end;
     padding: 1rem 4rem;
 }
 /* ------------------ section 4  ------------------ */
 .signup {
-    padding: 6vw 22vw;
+    padding: 8vw 20vw;
 }
 
 .signup > div {
