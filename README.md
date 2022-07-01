@@ -5,6 +5,8 @@
 ![instructions](./colors_and_stuff.png) -->
 
 
+https://www.theodinproject.com/lessons/foundations-landing-page
+
 
 <img src="./odin-project.png" width="600" />
 
